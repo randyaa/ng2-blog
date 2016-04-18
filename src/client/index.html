@@ -38,7 +38,19 @@
         app: {
           format: 'register',
           defaultExtension: 'js'
+        },
+        "@ngrx/store": {
+          main: "dist/index.js",
+          format: "cjs"
+        },
+        "@ngrx/devtools": {
+          main: "dist/index.js",
+          format: "cjs"
         }
+      },
+      map: {
+        "@ngrx/store": "vendor/@ngrx/store",
+        "@ngrx/devtools": "vendor/@ngrx/devtools"
       }
     });
     System.import('app.js').then(null, console.error.bind(console));
