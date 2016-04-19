@@ -6,7 +6,8 @@ module.exports = function(defaults) {
   var app = new Angular2App(defaults, {
     vendorNpmFiles: [
         '@ngrx/store/**/*',
-        '@ngrx/devtools/**/*'
+        '@ngrx/devtools/**/*',
+        '@angular2-material/**/*',
     ]
   });
   return app.toTree();
