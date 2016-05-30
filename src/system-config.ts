@@ -8,25 +8,35 @@ var map = {
 };
 /** User packages configuration. */
 var packages = {
-  '@angular2-material/core': {
+  '@angular2-material/button': {
     format: 'cjs',
     defaultExtension: 'js',
-    main: 'core.js'
+    main: 'button.js'
+  },
+  '@angular2-material/card': {
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: 'card.js'
   },
   '@angular2-material/checkbox': {
     format: 'cjs',
     defaultExtension: 'js',
     main: 'checkbox.js'
   },
-  '@angular2-material/button': {
+  '@angular2-material/core': {
     format: 'cjs',
     defaultExtension: 'js',
-    main: 'button.js'
+    main: 'core.js'
   },
-  '@angular2-material/radio': {
+  '@angular2-material/grid-list': {
     format: 'cjs',
     defaultExtension: 'js',
-    main: 'radio.js'
+    main: 'grid-list.js'
+  },
+  '@angular2-material/icon': {
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: 'icon.js'
   },
   '@angular2-material/input': {
     format: 'cjs',
@@ -38,25 +48,40 @@ var packages = {
     defaultExtension: 'js',
     main: 'list.js'
   },
-  '@angular2-material/card': {
+  '@angular2-material/progress-bar': {
     format: 'cjs',
     defaultExtension: 'js',
-    main: 'card.js'
+    main: 'progress-bar.js'
   },
-  '@angular2-material/toolbar': {
+  '@angular2-material/progress-circle': {
     format: 'cjs',
     defaultExtension: 'js',
-    main: 'toolbar.js'
+    main: 'progress-circle.js'
+  },
+  '@angular2-material/radio': {
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: 'radio.js'
   },
   '@angular2-material/sidenav': {
     format: 'cjs',
     defaultExtension: 'js',
     main: 'sidenav.js'
   },
-  '@angular2-material/progress-circle': {
+  '@angular2-material/slide-toggle': {
     format: 'cjs',
     defaultExtension: 'js',
-    main: 'progress-circle.js'
+    main: 'slide-toggle.js'
+  },
+  '@angular2-material/tabs': {
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: 'tabs.js'
+  },
+  '@angular2-material/toolbar': {
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: 'toolbar.js'
   },
 };
 
