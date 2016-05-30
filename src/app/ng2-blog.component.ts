@@ -1,18 +1,18 @@
 import {
     OnInit,
     Component,
-} from 'angular2/core';
-import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS, Route} from 'angular2/router';
+} from '@angular/core';
+import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS, Route} from '@angular/router-deprecated';
+
 import {Dir} from "@angular2-material/core";
 import {MdButton} from '@angular2-material/button';
 import {MD_SIDENAV_DIRECTIVES} from "@angular2-material/sidenav";
 import {MdToolbar} from "@angular2-material/toolbar";
 import {MD_LIST_DIRECTIVES} from "@angular2-material/list";
-import {Devtools} from '@ngrx/devtools';
 
 import {PostsRouteComponent} from './routes/posts-router.component';
 import {BlogDetails} from "./blog-details/blog-details.model";
-import {AboutRouteComponent} from './about/about';
+import {AboutRouteComponent} from './about/about.component';
 import {PostListComponent} from "./post/post-list.component";
 
 
@@ -20,10 +20,9 @@ import {PostListComponent} from "./post/post-list.component";
   moduleId: __moduleName,
   selector: 'ng2-blog-app',
   providers: [ROUTER_PROVIDERS],
-  templateUrl: './ng2-blog.html',
-  styleUrls:['./ng2-blog.css'],
+  templateUrl: './ng2-blog.component.html',
+  styleUrls:['./ng2-blog.component.css'],
   directives: [
-    Devtools,
     ROUTER_DIRECTIVES,
     Dir,
     MdButton,

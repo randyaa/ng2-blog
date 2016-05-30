@@ -4,7 +4,7 @@ import {
     Input,
     Pipe,
     PipeTransform,
-} from "angular2/core";
+} from "@angular/core";
 import {MD_CARD_DIRECTIVES} from '@angular2-material/card';
 
 import {Post} from "./post.model";

@@ -1,7 +1,7 @@
 import {
     Component,
     OnInit,
-} from 'angular2/core';
+} from '@angular/core';
 
 import {PostViewComponent} from "./post-view.component";
 import {Post} from "./post.model";
