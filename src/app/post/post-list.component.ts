@@ -2,6 +2,9 @@ import {
     Component,
     OnInit,
 } from '@angular/core';
+import {Observable} from 'rxjs/Observable';
+
+import {AngularFire} from 'angularfire2';
 
 import {PostViewComponent} from "./post-view.component";
 import {Post} from "./post.model";
@@ -18,8 +21,11 @@ import {Post} from "./post.model";
 export class PostListComponent implements OnInit {
 
   posts:Array<Post>;
+  fb_posts:Observable<any>;
 
-  constructor() {}
+  constructor(
+    private angularFire: AngularFire
+  ) {}
 
   ngOnInit() {
     this.posts = [
@@ -43,6 +49,9 @@ export class PostListComponent implements OnInit {
         body: "This is the body of post 1"
       },
 
-    ]
+    ];
+
+    this.fb_posts = this.angularFire.list('/posts');
+
   }
 }

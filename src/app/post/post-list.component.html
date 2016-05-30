@@ -1,3 +1,4 @@
-<div *ngFor="#post of posts" style="padding-bottom: 10px">
-    <ngb-post [post]="post"></ngb-post>
+<div *ngFor="#post of fb_posts | async" style="padding-bottom: 10px">
+  <ngb-post [post]="post"></ngb-post>
 </div>
+
