@@ -28,7 +28,13 @@ export class PostListComponent implements OnInit {
 
   ngOnInit() {
 
-    this.fb_posts = this.angularFire.list('/posts', {query:{orderByChild:'title'}} );
+    //see https://github.com/angular/angularfire2/blob/master/src/utils/query_observable.ts for options
+    this.fb_posts = this.angularFire.list('/posts', {
+      query:{
+        orderByChild:'title',
+        limitToLast:5
+      }
+    });
 
   }
 }
