@@ -3,13 +3,31 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 var map = {
-  '@angular2-material':'vendor/@angular2-material',
-  'firebase': 'vendor/firebase/lib/firebase-web.js',
-  'angularfire2': 'vendor/angularfire2'
+  //'@angular2-material':'vendor/@angular2-material',
+  '@angular2-material/button':'https://npmcdn.com/@angular2-material/button@2.0.0-alpha.5-2/',
+  '@angular2-material/card':'https://npmcdn.com/@angular2-material/card@2.0.0-alpha.5-2/',
+  '@angular2-material/checkbox':'https://npmcdn.com/@angular2-material/checkbox@2.0.0-alpha.5-2/',
+  '@angular2-material/core':'https://npmcdn.com/@angular2-material/core@2.0.0-alpha.5-2/',
+  '@angular2-material/grid-list':'https://npmcdn.com/@angular2-material/grid-list@2.0.0-alpha.5-2/',
+  '@angular2-material/icon':'https://npmcdn.com/@angular2-material/icon@2.0.0-alpha.5-2/',
+  '@angular2-material/input':'https://npmcdn.com/@angular2-material/input@2.0.0-alpha.5-2/',
+  '@angular2-material/list':'https://npmcdn.com/@angular2-material/list@2.0.0-alpha.5-2/',
+  '@angular2-material/progress-bar':'https://npmcdn.com/@angular2-material/progress-bar@2.0.0-alpha.5-2/',
+  '@angular2-material/progress-circle':'https://npmcdn.com/@angular2-material/progress-circle@2.0.0-alpha.5-2/',
+  '@angular2-material/radio':'https://npmcdn.com/@angular2-material/radio@2.0.0-alpha.5-2/',
+  '@angular2-material/sidenav':'https://npmcdn.com/@angular2-material/sidenav@2.0.0-alpha.5-2/',
+  '@angular2-material/slide-toggle':'https://npmcdn.com/@angular2-material/slide-toggle@2.0.0-alpha.5-2/',
+  '@angular2-material/tabs':'https://npmcdn.com/@angular2-material/tabs@2.0.0-alpha.5-2/',
+  '@angular2-material/toolbar':'https://npmcdn.com/@angular2-material/toolbar@2.0.0-alpha.5-2/',
+  //'firebase': 'vendor/firebase/lib/firebase-web.js',
+  'firebase': 'https://npmcdn.com/firebase@2.4.2/lib/firebase-web.js',
+  //'angularfire2': 'vendor/angularfire2'
+  'angularfire2': 'https://npmcdn.com/angularfire2@2.0.0-beta.0/',
 };
 /** User packages configuration. */
 var packages = {
   angularfire2: {
+    format: 'cjs',
     defaultExtension: 'js',
     main: 'angularfire2.js'
   },
@@ -127,9 +145,9 @@ System.config({
   map: {
     //'@angular': 'vendor/@angular',
     'rxjs': 'vendor/rxjs',
+    //'rxjs': 'https://npmcdn.com/rxjs@5.0.0-beta.8/',
     'main': 'main.js',
 
-    //'rxjs': 'https://npmcdn.com/rxjs@5.0.0-beta.8/',
     '@angular/core': 'https://npmcdn.com/@angular/core@2.0.0-rc.1/',
     '@angular/common': 'https://npmcdn.com/@angular/common@2.0.0-rc.1/',
     '@angular/compiler': 'https://npmcdn.com/@angular/compiler@2.0.0-rc.1/',
