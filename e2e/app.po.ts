@@ -1,9 +1,9 @@
-export class Ng2BlogPage {
+export class Ng2Blog2Page {
   navigateTo() {
     return browser.get('/');
   }
 
   getParagraphText() {
-    return element(by.css('ng2-blog-app p')).getText();
+    return element(by.css('app-root h1')).getText();
   }
 }

@@ -1,28 +1,32 @@
+// SystemJS configuration file, see links for more information
+// https://github.com/systemjs/systemjs
+// https://github.com/systemjs/systemjs/blob/master/docs/config-api.md
+
 /***********************************************************************************************
  * User Configuration.
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 var map = {
   //'@angular2-material':'vendor/@angular2-material',
-  '@angular2-material/button':'https://npmcdn.com/@angular2-material/button@2.0.0-alpha.5-2/',
-  '@angular2-material/card':'https://npmcdn.com/@angular2-material/card@2.0.0-alpha.5-2/',
-  '@angular2-material/checkbox':'https://npmcdn.com/@angular2-material/checkbox@2.0.0-alpha.5-2/',
-  '@angular2-material/core':'https://npmcdn.com/@angular2-material/core@2.0.0-alpha.5-2/',
-  '@angular2-material/grid-list':'https://npmcdn.com/@angular2-material/grid-list@2.0.0-alpha.5-2/',
-  '@angular2-material/icon':'https://npmcdn.com/@angular2-material/icon@2.0.0-alpha.5-2/',
-  '@angular2-material/input':'https://npmcdn.com/@angular2-material/input@2.0.0-alpha.5-2/',
-  '@angular2-material/list':'https://npmcdn.com/@angular2-material/list@2.0.0-alpha.5-2/',
-  '@angular2-material/progress-bar':'https://npmcdn.com/@angular2-material/progress-bar@2.0.0-alpha.5-2/',
-  '@angular2-material/progress-circle':'https://npmcdn.com/@angular2-material/progress-circle@2.0.0-alpha.5-2/',
-  '@angular2-material/radio':'https://npmcdn.com/@angular2-material/radio@2.0.0-alpha.5-2/',
-  '@angular2-material/sidenav':'https://npmcdn.com/@angular2-material/sidenav@2.0.0-alpha.5-2/',
-  '@angular2-material/slide-toggle':'https://npmcdn.com/@angular2-material/slide-toggle@2.0.0-alpha.5-2/',
-  '@angular2-material/tabs':'https://npmcdn.com/@angular2-material/tabs@2.0.0-alpha.5-2/',
-  '@angular2-material/toolbar':'https://npmcdn.com/@angular2-material/toolbar@2.0.0-alpha.5-2/',
+  '@angular2-material/button':'https://npmcdn.com/@angular2-material/button@2.0.0-alpha.6/',
+  '@angular2-material/card':'https://npmcdn.com/@angular2-material/card@2.0.0-alpha.6/',
+  '@angular2-material/checkbox':'https://npmcdn.com/@angular2-material/checkbox@2.0.0-alpha.6/',
+  '@angular2-material/core':'https://npmcdn.com/@angular2-material/core@2.0.0-alpha.6/',
+  '@angular2-material/grid-list':'https://npmcdn.com/@angular2-material/grid-list@2.0.0-alpha.6/',
+  '@angular2-material/icon':'https://npmcdn.com/@angular2-material/icon@2.0.0-alpha.6/',
+  '@angular2-material/input':'https://npmcdn.com/@angular2-material/input@2.0.0-alpha.6/',
+  '@angular2-material/list':'https://npmcdn.com/@angular2-material/list@2.0.0-alpha.6/',
+  '@angular2-material/progress-bar':'https://npmcdn.com/@angular2-material/progress-bar@2.0.0-alpha.6/',
+  '@angular2-material/progress-circle':'https://npmcdn.com/@angular2-material/progress-circle@2.0.0-alpha.6/',
+  '@angular2-material/radio':'https://npmcdn.com/@angular2-material/radio@2.0.0-alpha.6/',
+  '@angular2-material/sidenav':'https://npmcdn.com/@angular2-material/sidenav@2.0.0-alpha.6/',
+  '@angular2-material/slide-toggle':'https://npmcdn.com/@angular2-material/slide-toggle@2.0.0-alpha.6/',
+  '@angular2-material/tabs':'https://npmcdn.com/@angular2-material/tabs@2.0.0-alpha.6/',
+  '@angular2-material/toolbar':'https://npmcdn.com/@angular2-material/toolbar@2.0.0-alpha.6/',
   //'firebase': 'vendor/firebase/lib/firebase-web.js',
   'firebase': 'https://npmcdn.com/firebase@2.4.2/lib/firebase-web.js',
   //'angularfire2': 'vendor/angularfire2'
-  'angularfire2': 'https://npmcdn.com/angularfire2@2.0.0-beta.0/',
+  'angularfire2': 'https://npmcdn.com/angularfire2@2.0.0-beta.2/',
 };
 /** User packages configuration. */
 var packages = {
@@ -148,14 +152,14 @@ System.config({
     //'rxjs': 'https://npmcdn.com/rxjs@5.0.0-beta.8/',
     'main': 'main.js',
 
-    '@angular/core': 'https://npmcdn.com/@angular/core@2.0.0-rc.1/',
-    '@angular/common': 'https://npmcdn.com/@angular/common@2.0.0-rc.1/',
-    '@angular/compiler': 'https://npmcdn.com/@angular/compiler@2.0.0-rc.1/',
-    '@angular/http': 'https://npmcdn.com/@angular/http@2.0.0-rc.1/',
-    '@angular/router': 'https://npmcdn.com/@angular/router@2.0.0-rc.1/',
-    '@angular/router-deprecated': 'https://npmcdn.com/@angular/router-deprecated@2.0.0-rc.1/',
-    '@angular/platform-browser': 'https://npmcdn.com/@angular/platform-browser@2.0.0-rc.1/',
-    '@angular/platform-browser-dynamic': 'https://npmcdn.com/@angular/platform-browser-dynamic@2.0.0-rc.1/',
+    '@angular/core': 'https://npmcdn.com/@angular/core@2.0.0-rc.3/',
+    '@angular/common': 'https://npmcdn.com/@angular/common@2.0.0-rc.3/',
+    '@angular/compiler': 'https://npmcdn.com/@angular/compiler@2.0.0-rc.3/',
+    '@angular/http': 'https://npmcdn.com/@angular/http@2.0.0-rc.3/',
+    '@angular/router': 'https://npmcdn.com/@angular/router@2.0.0-rc.3/',
+    '@angular/platform-browser': 'https://npmcdn.com/@angular/platform-browser@2.0.0-rc.3/',
+    '@angular/platform-browser-dynamic': 'https://npmcdn.com/@angular/platform-browser-dynamic@2.0.0-rc.3/',
+    '@angular/router-deprecated': 'https://npmcdn.com/@angular/router-deprecated@2.0.0-rc.2/',
   },
   packages: cliSystemConfigPackages
 });

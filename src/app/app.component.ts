@@ -18,13 +18,13 @@ import {PostListComponent} from "./post/post-list.component";
 
 @Component({
   moduleId: __moduleName,
-  selector: 'ng2-blog-app',
+  selector: 'app-root',
   providers: [
     ROUTER_PROVIDERS,
     MdIconRegistry,
   ],
-  templateUrl: './ng2-blog.component.html',
-  styleUrls:['./ng2-blog.component.css'],
+  templateUrl: './app.component.html',
+  styleUrls:['./app.component.css'],
   directives: [
     ROUTER_DIRECTIVES,
     Dir,
@@ -41,7 +41,7 @@ import {PostListComponent} from "./post/post-list.component";
   new Route({path: '/about', name: 'About', component: AboutRouteComponent}),
   new Route({path: '/posts/...', name: 'Posts', component: PostsRouteComponent}),
 ])
-export class Ng2BlogApp implements OnInit {
+export class AppComponent implements OnInit {
   private blog:BlogDetails;
 
   ngOnInit(){
@@ -55,7 +55,4 @@ export class Ng2BlogApp implements OnInit {
 
   defaultMeaning: number = 42;
 
-  meaningOfLife(meaning?: number) {
-    return `The meaning of life is ${meaning || this.defaultMeaning}`;
-  }
 }
